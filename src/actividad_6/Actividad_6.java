@@ -29,6 +29,8 @@ public class Actividad_6 {
         Letra[4] = 'E';
         Letra[5] = 'F';
         double suma = 0;
+        
+        //Escanea el nombre 
         Scanner sc = new Scanner(System.in);
         System.out.print("Nombre del Alumno: ");
         Nombre = sc.next(); //Guarda el nombre del alumno 
@@ -38,14 +40,14 @@ public class Actividad_6 {
             System.out.print("Calificación " + (i + 1) + ": ");
             Materias[i] = sc.nextInt();
         }
-         //saca el promedio
+         //saca el promedio 
            for (i = 0; i < Materias.length; i++) {
             suma = suma + Materias[i]/5;
         }
-           
+           //Muestra el promedio 
              System.out.println("Promedio: " + suma);
              
-         //Saca la calificacion    
+         //Saca la calificacion y lo muestra     
         if(suma <=50){
             System.out.println("Calificacion: " + Letra[5]);
         }
